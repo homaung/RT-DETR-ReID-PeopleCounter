@@ -1,4 +1,4 @@
-# RT-DETR_ReID
+# RT-DETR-ReID-PeopleCounter
 
 RT-DETR(Real-Time Detection Transformer)로 **사람을 탐지**하고, 각 사람의 **보행자 속성(나이·성별·상의색·하의색)** 을 함께 예측하는 **단일 모델**입니다.
 
