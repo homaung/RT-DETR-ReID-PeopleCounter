@@ -1,0 +1,36 @@
+# 노트북 체크포인트
+.ipynb_checkpoints/
+
+# dataset — 내부 전체 제외
+dataset/*
+
+# checkpoints — 폴더 유지, 파일 제외
+checkpoints/*/*
+
+# feature_map — 폴더 유지, 파일 제외
+RT-DETR_ReID_feature_map/*/*
+
+# 미포함 항목
+logs/
+.sixth/
+.claude/
+vtest.avi
+*.avi
+__pycache__/
+*.pyc
+# 추론 결과·query 캐시 (로컬 전용)
+infer_results/*
+query_cache_v0_3/
+*.pt
+*.mp4
+
+# === 최종 버전 동봉 자산 (위 규칙 예외) ===
+# 학습 가중치 (region-branch)
+!checkpoints/region_attr/best.pt
+# 소스 테스트 영상
+!test_videos/
+!test_videos/*.mp4
+# 추론 결과 영상
+!infer_results/people-detection_pred.mp4
+!infer_results/one-by-one-person-detection_pred.mp4
+!infer_results/store-aisle-detection_pred.mp4
